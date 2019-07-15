@@ -1,6 +1,8 @@
 
 objects := log memdev userproc
 
+objects += hdmi
+
 #===============================================================================
 # rules
 #===============================================================================
@@ -12,5 +14,9 @@ clean:
 
 install:
 
-$(objects):
+$(objects): sample_common
 	$(AT)make -C $@
+
+sample_common:
+	$(AT)make -C common
+

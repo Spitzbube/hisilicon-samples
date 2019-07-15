@@ -1,7 +1,9 @@
 
 OBJ_DIR := $(SAMPLE_DIR)/obj
+COMMON_OBJ_DIR := $(SAMPLE_DIR)/obj
 
 HI_SAMPLE_IMAGES := $(addprefix $(OBJ_DIR)/,$(SAMPLE_IMAGES))
+HI_COMMON_OBJS := $(addprefix $(COMMON_OBJ_DIR)/,$(COMMON_OBJS)) 
 
 CFLAGS  += $(CFG_HI_SAMPLE_CFLAGS)
 CFLAGS  += -I$(SAMPLE_DIR)/common
