@@ -9,10 +9,10 @@ HI_S32 main(HI_VOID)
 	HI_S32                      Ret;
     HI_CHAR aszInputCmd[16];
 
-    Ret = HIADP_HDMI_Init(HI_UNF_HDMI_ID_0);
+    Ret = HIADP_Disp_Init(HI_UNF_ENC_FMT_720P_50);
     if (HI_SUCCESS != Ret)
     {
-        printf("HIADP_HDMI_Init failed 0x%x\n", Ret);
+        printf("HIADP_Disp_Init failed 0x%x\n", Ret);
         return Ret;
     }
 
@@ -27,6 +27,7 @@ HI_S32 main(HI_VOID)
         sleep(1);
     }
 
+    HIADP_Disp_DeInit();
 
     return 0;
 }
