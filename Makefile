@@ -1,5 +1,6 @@
 
-objects := log memdev userproc
+objects := log memdev userproc \
+           tde
 
 objects += hdmi
 
