@@ -1,8 +1,10 @@
 
 objects := log memdev userproc \
-           fb tde
+           fb higo tde
 
 objects += hdmi
+
+objects += gpu
 
 #===============================================================================
 # rules
