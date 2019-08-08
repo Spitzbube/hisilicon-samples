@@ -26,6 +26,9 @@ CFLAGS += -DHI_DEMUX_PORT=32 \
 
 SYS_LIBS := -lpthread
 
-COMMON_SRCS := hi_adp_hdmi.c \
-               hi_adp_mpi.c
+COMMON_SRCS := hi_adp_demux.c \
+               hi_adp_data.c \
+               hi_adp_hdmi.c \
+               hi_adp_mpi.c \
+               hi_adp_search.c
 
