@@ -615,9 +615,7 @@ HI_S32 main(HI_S32 argc, HI_CHAR *argv[])
 
     HI_SYS_Init();
 
-#if 0 //Spitzbube
     HIADP_MCE_Exit();
-#endif
 
     Ret = HI_UNF_AVPLAY_Init();
     if (Ret != HI_SUCCESS)

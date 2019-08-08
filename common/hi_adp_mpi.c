@@ -631,7 +631,6 @@ HI_S32 HIADP_VO_DeInit()
     return HI_SUCCESS;
 }
 
-#if 0 //Spitzbube
 /*****************************************SOUND Common Interface************************************/
 HI_S32 HIADP_Snd_Init(HI_VOID)
 {
@@ -1274,7 +1273,6 @@ HI_S32 HIADP_AVPlay_SwitchAud(HI_HANDLE hAvplay,HI_U32 AudPid, HI_U32 u32AudType
     return HI_SUCCESS;
 }
 
-
 HI_S32 HIADP_MCE_Exit(HI_VOID)
 {
 #ifndef ANDROID
@@ -1316,6 +1314,7 @@ HI_S32 HIADP_MCE_Exit(HI_VOID)
 #endif
     return HI_SUCCESS;
 }
+
 HI_S32 HIADP_DMX_AttachTSPort(HI_U32 Dmxid, HI_U32 TunerID)
 {
     HI_S32                      Ret;
@@ -1400,4 +1399,3 @@ HI_S32 HIADP_DMX_AttachTSPort(HI_U32 Dmxid, HI_U32 TunerID)
     
     return HI_SUCCESS;
 }
-#endif //Spitzbube

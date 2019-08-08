@@ -293,9 +293,7 @@ int main(int argc, char* argv[])
 #ifndef CFG_HIFB_ANDRIOD
     HI_SYS_Init();
 
-#if 0 //Spitzbube
     HIADP_MCE_Exit();
-#endif
 
     ret = HIADP_Disp_Init(HI_UNF_ENC_FMT_720P_50);
     if (ret != HI_SUCCESS)
