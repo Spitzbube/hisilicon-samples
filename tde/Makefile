@@ -19,6 +19,6 @@ LOCAL_OBJS  := tde_common.o
 
 COMMON_OBJS := $(COMMON_SRCS:%.c=%.o)
 
-DEPEND_LIBS := -lhi_common -lhi_msp
+DEPEND_LIBS := -lhi_common -lhi_msp -ldl
 
 include $(SAMPLE_DIR)/hi_sample_rules.mak

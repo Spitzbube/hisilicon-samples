@@ -15,6 +15,6 @@ SAMPLE_IMAGES := sample_fb sample_decmp_fb
 
 COMMON_OBJS := $(COMMON_SRCS:%.c=%.o)
 
-DEPEND_LIBS := -lhi_common -lhi_msp
+DEPEND_LIBS := -lhi_common -lhi_msp -ldl
 
 include $(SAMPLE_DIR)/hi_sample_rules.mak
