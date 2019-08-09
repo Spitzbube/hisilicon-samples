@@ -1,5 +1,5 @@
 
-objects := esplay tsplay log memdev userproc \
+objects := esplay ao tsplay log memdev userproc \
            fb higo tde
 
 objects += hdmi
